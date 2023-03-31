@@ -1,0 +1,21 @@
+.header-image {
+   position: absolute;
+   left: 0;
+   top: 5px;
+   width: 70px;
+}
+
+hr {
+   color: rgb(0, 0, 0);
+   height: -5px;
+   margin-top: 0;
+   margin-bottom: 10px;
+}
+
+ h1 {
+      text-align: center;
+ }
+
+ .index-image {
+   width: 40%;
+ }
