@@ -1,21 +1,57 @@
+header {
+  background-color: rgba(57, 150, 26, 0.73);
+  color: rgb(0, 0, 0);
+  padding: 3px;
+}  
+
+body {
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+}
+
 .header-image {
-   position: absolute;
-   left: 0;
-   top: 5px;
-   width: 70px;
+  position: absolute;
+  left: 3;
+  top: 13px;
+  width: 90px;
 }
 
-hr {
-   color: rgb(0, 0, 0);
-   height: -5px;
-   margin-top: 0;
-   margin-bottom: 10px;
+
+h1 {
+  text-align:center;
+  font-size: 40px;
 }
 
- h1 {
-      text-align: center;
- }
+h2 {
+  font-size: 20px;
+  margin-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
 
- .index-image {
-   width: 40%;
- }
+p {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+strong {
+  font-size: 30px;
+}
+
+.image-text-container {
+  display: flex;
+  align-items:center;
+  margin-top: 30px;
+  background-image: url(images/Affen.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7; /* setzt die Opazität des Hintergrundbildes auf 70% */
+}
+
+.image-text-container img {
+  display: none;
+}
+
+.text-container {
+  margin-left: 50px;
+  color: rgb(255, 255, 255);
+}
