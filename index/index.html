@@ -24,11 +24,20 @@
     </a>
     <h1>MyLittleZoo</h1>
 
-    <div class="hamicon"> &#9776; </div>
+    <div id="hamburgerIcon" onclick="openNav()">&#9776;</div>
+            <!-- Hamburger Navigation mit einem Close-Button (x), ist im CSS mit "width:0" ausgeblendet  -->
+
+      <nav id="hamburgerNav">
+          <a class="closebtn" onclick="closeNav()" href="#">&times;</a>
+          <!--  &times; stellt das X dar -->
+          <a class="active" href="/index/index.html">Startseite</a>
+          <a href="/UnsereAffen/UnsereAffen.html">Unsere Affen</a>
+          <a href="/AboutUs/AboutUs.html">About Us</a>
+      </nav>    
 
   </header>
 
-  <h3>Startseite</h3>
+
 
   <div class="image-text-container">
 
@@ -84,7 +93,7 @@
   </p>
 
 
-  <h4>Besuchen sie uns und erleben Sie die Magie der Affenwelt! </h4>
+  <h4>Besuchen sie uns und erleben Sie die Magie der Affenwelt! </h4> <br>
 
   <p>
     <div class="info-container">
@@ -110,25 +119,15 @@
       © Copyrights
     </footer>
 
-</html>
+    <script>
+      function openNav() {
+          document.getElementById("hamburgerNav").style.width = "100%";
+      }
+      function closeNav() {
+          document.getElementById("hamburgerNav").style.width = "0%";
+      }
+  </script>
 
-<!--
-  <p>
-    <div class="opening-hours">
-      <h3>Öffnungszeiten</h3>
-      <div class="days">
-        <span>Mo-Fr:</span>
-        <span>09:00-18:00</span>
-      </div>
-      <div class="days">
-        <span>Sa:</span>
-        <span>10:00-18:00</span>
-      </div>
-      <div class="days">
-        <span>So:</span>
-        <span>09:00-17:00</span>
-      </div>
-    </div>
-    
-    
-    
+    </body>
+
+</html> 
