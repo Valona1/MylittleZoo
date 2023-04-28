@@ -20,15 +20,15 @@ h1 {
   margin:0;
 }
 
-  /* Hamburger*/
+    /* Hamburger*/
 
     #hamburgerIcon {
       display: flex;
       font-size: 3em;
       cursor: pointer;
-   }
+  }
 
-   #hamburgerNav {
+  #hamburgerNav {
     position: fixed;
     height: 100%;
     width: 0px;
@@ -45,34 +45,38 @@ h1 {
     align-items: center;
     justify-content: center;
 
- }
+  }
 
   #hamburgerNav .closebtn {
     position: absolute;
     top: -10px;
     right: 10px;
     font-size: 60px;
- }
- 
- #hamburgerNav a {
+  }
+
+  #hamburgerNav a {
     display: block;
     text-decoration: none;
     font-size: 36px;
     color: #818181;
     transition: 0.3s;
- }
- 
- #hamburgerNav a:hover {
-    color: #f1f1f1;
- }
+  }
 
- #hamburgerNav a.active {
+  #hamburgerNav a:hover {
+    color: #f1f1f1;
+  }
+
+  #hamburgerNav a.active {
   color: rgba(112, 177, 90, 0.5);
- }
+  }
 
 body {
   background-color: #ffffff;
   font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+  margin-left: 70px;
 }
 
 h2 {
@@ -97,10 +101,10 @@ h5{
 
 .image-text-container {
   display: flex;
-  margin-top: 80px;
+  margin-top: 20px;
   background-image: url(/images/Affen.jpg);
   width: 100%;
-  height: 600px;
+  height: 660px;
   background-size: cover;
   background-position: center;
   opacity: 0.65; 
@@ -199,11 +203,11 @@ h5{
   justify-content: space-between;
   align-items: center;
   background-color: #dddbdb;
-  padding: 30px;
+  padding: 45px;
 }
 
 .info-item {
-  text-align: center;
+
   margin: 0 20px;
 }
 

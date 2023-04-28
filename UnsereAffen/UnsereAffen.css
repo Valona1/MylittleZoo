@@ -18,83 +18,171 @@ h1 {
   text-align:center;
   font-size: 30px;
   margin:0;
+  margin-left: 60px;
 }
 
-  
-  /* Hamburger*/
+    
+    /* Hamburger*/
 
-  #hamburgerIcon {
+    #hamburgerIcon {
+      display: flex;
+      font-size: 3em;
+      cursor: pointer;
+  }
+
+  #hamburgerNav {
+    position: fixed;
+    height: 100%;
+    width: 0px;
+    /* Hat eine Breite von 0, wird also nicht angezeigt */
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.95);
+    text-align: center;
+    z-index: 1000;
     display: flex;
-    font-size: 3em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  #hamburgerNav .closebtn {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    font-size: 60px;
+  }
+
+  #hamburgerNav a {
+    display: block;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    transition: 0.3s;
+  }
+
+  #hamburgerNav a:hover {
+    color: #f1f1f1;
+  }
+
+  #hamburgerNav a.active {
+  color: rgba(112, 177, 90, 0.5);
+  }
+
+  body {
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-top: 10px;
+
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  h4{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  h5{
+    font-size: 20px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+  }
+
+
+  #mainAffen article {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #mainAffen section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px 50px 20px;
+    width: 30%;
+    min-width: 300px;
+    text-align: center;
+
+  }
+
+  #mainAffen .headline {
+    width: 100%;
+    color: rgb(16, 16, 16);
+    margin: 40px 0;
+  }
+
+  #mainAffen a:hover {
+    background-color: transparent;
+  }
+
+  .Affen-Bilder {
+    width: 100%;
+    box-shadow: 5px 10px 30px #888888;
     cursor: pointer;
- }
+  }
 
- #hamburgerNav {
-  position: fixed;
-  height: 100%;
-  width: 0px;
-  /* Hat eine Breite von 0, wird also nicht angezeigt */
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  transition: 0.5s;
-  background-color: rgba(0, 0, 0, 0.95);
-  text-align: center;
-  z-index: 1000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  .Affen-Bilder:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
 
-}
+  #overlay {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.95);
+    width: 90%;
+    padding: 100px 5%;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    z-index: 1000;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    min-height: calc(100vh - 200px);
+  }
 
-#hamburgerNav .closebtn {
-  position: absolute;
-  top: -10px;
-  right: 10px;
-  font-size: 60px;
-}
+  #overlay img {
+    width: 60%;
+    height: auto;
+    margin-right: 20px;
+  }
 
-#hamburgerNav a {
-  display: block;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  transition: 0.3s;
-}
+  #overlay h2 {
+    margin-bottom: 20px;
+    margin-top: -8px;
+    font-size: 2.5rem;
+  }
 
-#hamburgerNav a:hover {
-  color: #f1f1f1;
-}
+  #overlay .closebtn {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    font-size: 60px;
+    color: green;
+    text-decoration: none;
+  }
 
-#hamburgerNav a.active {
-color: rgba(112, 177, 90, 0.5);
-}
-
-body {
-  background-color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
-}
-
-h2 {
-  font-size: 40px;
-  margin-top: 50px;
-
-}
-
-h3 {
-  font-size: 20px;
-  margin-top: 30px;
-}
-
-h4{
-  font-size: 30px;
-  text-align: center;
-  margin-top: 50px;
-}
-
-h5{
-  font-size: 20px;
-  margin-top: 2px;
-  margin-bottom: 10px;
-}
+  .footer{
+    margin-top: 140px;
+    padding: 25px;
+    background-color: rgba(57, 150, 26, 0.5);
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
