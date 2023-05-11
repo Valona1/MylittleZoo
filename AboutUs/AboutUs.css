@@ -1,7 +1,3 @@
-body {
-  line-height: 1.4;
-}
-
 header {
   background-color: rgba(57, 150, 26, 0.5);
   color: rgb(0, 0, 0);
@@ -18,20 +14,31 @@ header {
   width: 70px;
 }
 
+body {
+  line-height: 1.4;
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+}
+
 h1 {
   margin-left: 70px;
   font-size: 30px;
   margin: 0;
 }
 
-h3{
+h3 {
   margin-top: 30px;
   font-size: 30px;
 }
 
-h4{
+h4 {
   margin-bottom: 40px;
   font-size: 20px;
+}
+
+h5 {
+  font-size: 15px;
+  margin-top: 80px;
 }
 
 /* Hamburger*/
@@ -84,18 +91,7 @@ h4{
   color: rgba(112, 177, 90, 0.5);
 }
 
-
-body {
-  background-color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
-}
-
-h5 {
-  font-size: 15px;
-  margin-top: 80px;
-}
-
-.headline{
+.headline {
   width: 100%;
   color: rgb(16, 16, 16);
   margin: 40px 0;
@@ -103,32 +99,39 @@ h5 {
   text-align: center;
 }
 
-.AboutUs{
+/* About Us Text */
+.AboutUs {
   text-align: center;
   display: flex;
   justify-content: center;
-  background-color:rgb(219, 249, 219);
+  background-color: rgb(219, 249, 219);
   padding: 25px;
   margin-bottom: 90px;
+  font-size: 20px;
 }
 
-.container{
+/* Google Maps und Kontakt */
+
+.container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.maps-container{
+.maps-container {
   margin-right: 30px;
   width: 50%;
   margin-top: 10px;
 }
 
-.email-container{
+
+.email-container {
   width: 40%;
   margin-left: 30px;
 }
+
+/* Email*/
 
 .form-group {
   margin-bottom: 20px;
@@ -165,7 +168,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: rgba(57, 150, 26, 0.4);
+  background-color: rgba(57, 150, 26, 0.3);
 }
 
 .footer {
@@ -178,24 +181,24 @@ input[type="submit"]:hover {
 
 
 @media screen and (max-width:720px) {
+
   /* Zusätzliche Regeln für kleinere Monitore  */
-  h1{
+  h1 {
     margin-left: 70px;
   }
 
-  h4{
+  h4 {
     text-align: center;
   }
 
-  .maps-container{
+  .maps-container {
     width: 100%;
     align-items: center;
     margin: 0;
   }
 
-  .email-container{
-    margin-top: 30px;
-    margin: 0;
+  .email-container {
+    margin-top: 50px;
     margin-right: 40px;
   }
 }

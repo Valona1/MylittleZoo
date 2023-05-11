@@ -14,87 +14,84 @@ header {
   width: 70px;
 }
 
-h1 {
-  text-align:center;
-  font-size: 30px;
-  margin:0;
-}
-
-    /* Hamburger*/
-
-    #hamburgerIcon {
-      display: flex;
-      font-size: 3em;
-      cursor: pointer;
-  }
-
-  #hamburgerNav {
-    position: fixed;
-    height: 100%;
-    width: 0px;
-    /* Hat eine Breite von 0, wird also nicht angezeigt */
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    transition: 0.5s;
-    background-color: rgba(0, 0, 0, 0.95);
-    text-align: center;
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-  }
-
-  #hamburgerNav .closebtn {
-    position: absolute;
-    top: -10px;
-    right: 10px;
-    font-size: 60px;
-  }
-
-  #hamburgerNav a {
-    display: block;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    transition: 0.3s;
-  }
-
-  #hamburgerNav a:hover {
-    color: #f1f1f1;
-  }
-
-  #hamburgerNav a.active {
-  color: rgba(112, 177, 90, 0.5);
-  }
-
 body {
   background-color: #ffffff;
   font-family: 'Open Sans', sans-serif;
+  line-height: 1.4;
 }
 
-h1{
-  margin-left: 70px;
+h1 {
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  margin-left: 60px;
 }
 
 h2 {
   font-size: 40px;
   margin-top: 50px;
-
 }
 
-h4{
+h4 {
   font-size: 30px;
   text-align: center;
   margin-top: 50px;
 }
 
-h5{
+h5 {
   font-size: 20px;
   margin-top: 2px;
   margin-bottom: 10px;
+}
+
+/* Hamburger*/
+
+#hamburgerIcon {
+  display: flex;
+  font-size: 3em;
+  cursor: pointer;
+}
+
+#hamburgerNav {
+  position: fixed;
+  height: 100%;
+  width: 0px;
+  /* Hat eine Breite von 0, wird also nicht angezeigt */
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.95);
+  text-align: center;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#hamburgerNav .closebtn {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  font-size: 60px;
+}
+
+#hamburgerNav a {
+  display: block;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  transition: 0.3s;
+}
+
+#hamburgerNav a:hover {
+  color: #f1f1f1;
+}
+
+#hamburgerNav a.active {
+  color: rgba(112, 177, 90, 0.5);
 }
 
 /*Grosse Bild*/
@@ -107,9 +104,8 @@ h5{
   height: 660px;
   background-size: cover;
   background-position: center;
-  opacity: 0.65; 
+  opacity: 0.65;
 }
-
 
 .text-container {
   color: rgb(255, 255, 255);
@@ -118,7 +114,7 @@ h5{
 }
 
 .text-container p {
-  margin-bottom: 50px; 
+  margin-bottom: 50px;
 }
 
 /* die kleinen Bilder*/
@@ -184,7 +180,7 @@ h5{
   height: 300px;
   background-size: cover;
   background-position: center;
-  opacity: 0.65; 
+  opacity: 0.65;
 }
 
 
@@ -201,13 +197,11 @@ h5{
 .info-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background-color: #dddbdb;
   padding: 45px;
 }
 
 .info-item {
-
   margin: 0 20px;
 }
 
@@ -220,10 +214,58 @@ h5{
   font-size: 17px;
 }
 
-.footer{
+.footer {
   margin-top: 50px;
   padding: 25px;
   background-color: rgba(57, 150, 26, 0.5);
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+@media screen and (max-width:720px) {
+  /* Zusätzliche Regeln für kleinere Monitore  */
+
+  h1{
+    margin-left: 70px;
+  }
+
+  h2{
+    font-size: 30px;
+    margin-bottom: 60px;
+  }
+
+  .bilder-container{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .bild-container{
+    width: 100%;
+    height: auto;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .bild:hover{
+    opacity: 0.2;
+  }
+  .info-container {
+    flex-direction: column;
+    padding: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+  .info-item {
+    margin: 20px 0;
+  }
+
+  .text-container2 {
+    margin-left: 40px;
+    color: rgb(255, 255, 255);
+    margin-top: 0px;
+    text-align: center;
+    font-size: 5px;
+  }
 }
