@@ -99,7 +99,7 @@ h5 {
 .image-text-container {
   display: flex;
   margin-top: 20px;
-  background-image: url(/images/Affen.jpg);
+  background-image: url(images/Affen.jpg);
   width: 100%;
   height: 660px;
   background-size: cover;
