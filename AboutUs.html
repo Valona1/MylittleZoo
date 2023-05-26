@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyLittleZoo</title>
+  <link href="./AboutUs.css" rel="stylesheet">
+  <meta name="viewport" content="Width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html"><img class="header-image" src="/images/Logo.png" /></a>
+    </a>
+    <h1>MyLittleZoo</h1>
+
+    <div id="hamburgerIcon" onclick="openNav()">&#9776;</div>
+    <!-- Hamburger Navigation mit einem Close-Button (x), ist im CSS mit "width:0" ausgeblendet  -->
+
+    <nav id="hamburgerNav">
+      <a class="closebtn" onclick="closeNav()" href="#">&times;</a>
+      <!--  &times; stellt das X dar -->
+      <a href="index.html">Startseite</a>
+      <a href="UnsereAffen.html">Unsere Affen</a>
+      <a class="active" href="AboutUs.html">About Us</a>
+    </nav>
+
+  </header>
+
+  <h4 class="headline">About Us</h4>
+
+  <div class="AboutUs">
+    Unser Zoo hat sich auf Affen spezialisiert und wurde aus der Leidenschaft für diese faszinierenden Tiere gegründet.
+    <br>
+    Wir haben diesen Zoo eröffnet, um eine sichere und artgerechte Umgebung für Affen zu schaffen und gleichzeitig
+    unseren <br>
+    Besuchern die Möglichkeit zu geben,
+    diese intelligenten Tiere hautnah zu erleben und mehr über sie zu erfahren. <br>
+    Wir sind stolz darauf, unseren Teil dazu beizutragen, die Welt der Affen besser zu verstehen. <br><br>
+  </div>
+
+  <div class="container">
+    <div class="maps-container">
+      <h4> Hier können Sie uns finden:</h4>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5403.854331493057!2d8.498126!3d47.37434!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a2b8ef6cfff%3A0x486d72e2e3b47b06!2sSackzelg%2047%2C%208047%20Z%C3%BCrich!5e0!3m2!1sde!2sch!4v1683551518645!5m2!1sde!2sch"
+        width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="email-container">
+      <h3>Kontakt</h3>
+      <p>Haben Sie noch Fragen stellen Sie diese hier:</p> <br>
+      <form action="mailto:deine-email@example.com" method="post" enctype="text/plain">
+        <div class="form-group">
+          <label for="vorname">Vorname:</label>
+          <input type="text" id="vorname" name="vorname" required>
+        </div>
+
+        <div class="form-group">
+          <label for="nachname">Nachname:</label>
+          <input type="text" id="nachname" name="nachname" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="frage">Frage:</label>
+          <textarea id="frage" name="frage" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" value="Absenden">
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    © Copyrights
+  </footer>
+
+  <script>
+    function openNav() {
+      document.getElementById("hamburgerNav").style.width = "100%";
+    }
+    function closeNav() {
+      document.getElementById("hamburgerNav").style.width = "0%";
+    }
+  </script>
+
+</body>
+
+</html>

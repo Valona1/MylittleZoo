@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MyLittleZoo</title>
-  <link href="./style.css" rel="stylesheet">
+  <link href="./index.css" rel="stylesheet">
   <meta name="viewport" content="Width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,37 +17,112 @@
 </head>
 
 <body>
-  <header>
-    <div class="navbar">
-      <div class="brand">
-        <h1>MyLittleZoo</h1>
-        <a href="https://icon-icons.com/de/symbol/Affe/100806" target="_blank">
-          <img class="header-image" src="images/Logo.png" />
-        </a>
-       
-      </div>
-    </div>
-  </header>
-  <h2>Startseite</h2>
 
-  <p>
+  <header>
+    <a href="index.html">
+      <img class="header-image" src="/images/Logo.png" />
+    </a>
+    <h1>MyLittleZoo</h1>
+
+    <div id="hamburgerIcon" onclick="openNav()">&#9776;</div>
+    <!-- Hamburger Navigation mit einem Close-Button (x), ist im CSS mit "width:0" ausgeblendet  -->
+
+    <nav id="hamburgerNav">
+      <a class="closebtn" onclick="closeNav()" href="#">&times;</a>
+      <!--  &times; stellt das X dar -->
+      <a class="active" href="index.html">Startseite</a>
+      <a href="UnsereAffen.html">Unsere Affen</a>
+      <a href="AboutUs.html">About Us</a>
+    </nav>
+
+  </header>
+
+
+
   <div class="image-text-container">
-    <img class="index-image" src="images/AffenStartseite1.jpeg">
-    <img class="index-image" src="images/AffenStarseite.jpeg">
 
     <div class="text-container">
-      <h2>Willkommen im Affenreich</h2>
-      <p>Hier können Sie in die Welt der Primaten eintauchen können.
-        Wir haben über 20 verschiedene Arten von Affen, von den kleinsten Kapuzineraffen bis zu den majestätischen
-        Gorillas.
-        Unsere Besucher können an unseren täglichen Fütterungen teilnehmen oder interaktive Ausstellungen besuchen, um
-        mehr über die faszinierenden Verhaltensweisen der Affen zu erfahren.</p>
-
-      <p>Unser Zoo befindet sich inmitten einer wunderschönen Waldlandschaft, die eine einzigartige Kulisse für unseren
-        Zoo bietet.
-        Wir sind stolz darauf, einige der seltensten Affenarten der Welt zu beherbergen, darunter die Gibbons von Borneo
-        und die Lemuren von Madagaskar.</p>
-
-      <p>Besuchen Sie uns und erleben Sie die Magie der Affenwelt!</p>
+      <h2>Willkommen im Affenreich!</h2>
+      Hier kann man interaktive Ausstellungen besuchen, um mehr <br>
+      über die faszinierenden Verhaltensweisen der Affen zu erfahren.</p>
     </div>
   </div>
+
+  <div class="bilder-container">
+    <div class="bild-container">
+        <img class="bild" src="/images/Verschiedene Affen.png">
+      </a>
+      <div class="text-container1"></div>
+      <div class="text">
+        Wir haben über 20 verschiedene Affen Arten
+      </div>
+    </div>
+
+    <div class="bild-container">
+        <img class="bild" src="/images/AffenFüttern.png">
+      </a>
+      <div class="text-container1"></div>
+      <div class="text">
+        Unsere Besucher können an unseren täglichen Fütterungen teilnehmen
+      </div>
+    </div>
+
+    <div class="bild-container">
+        <img class="bild" src="/images/Besucher.png">
+      </a>
+      <div class="text-container1"></div>
+      <div class="text">
+        Die seltensten Affenarten der Welt finden sie bei uns
+      </div>
+    </div>
+  </div>
+  <p>
+  <div class="image-container2">
+    <div class="text-container2">
+      <h2>Unser Zoo befindet sich inmitten einer wunderschönen Waldlandschaft</h2>
+      <p>
+      <p>
+    </div>
+  </div>
+  </p>
+
+
+  <h4>Besuchen Sie uns und erleben Sie die Magie der Affenwelt! </h4> <br>
+
+  <p>
+  <div class="info-container">
+    <div class="info-item">
+      <h5>Öffnungszeiten</h5>
+      <p>Montag bis Freitag: 10:00 Uhr - 18:00 Uhr<br>
+        Samstag bis Sonntag: 09:00 Uhr - 17:00 Uhr</p>
+    </div>
+    <div class="info-item">
+      <h5>Feiertage</h5>
+      <p>09:00 Uhr - 19:00 Uhr</p>
+    </div>
+    <div class="info-item">
+      <h5>Preise</h5>
+      <p>Erwachsene: CHF 20<br>
+        Jugendliche (9-17 Jahre): CHF 15 <br>
+        Kinder (unter 9): Gratis</p>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    © Copyrights
+  </footer>
+
+
+  <script>
+    function openNav() {
+      document.getElementById("hamburgerNav").style.width = "100%";
+    }
+    function closeNav() {
+      document.getElementById("hamburgerNav").style.width = "0%";
+    }
+  </script>
+
+</body>
+
+</html>

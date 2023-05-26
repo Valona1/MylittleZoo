@@ -1,0 +1,210 @@
+header {
+  background-color: rgba(57, 150, 26, 0.5);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-image {
+  position: absolute;
+  left: 3;
+  top: 13px;
+  width: 70px;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.4;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  margin-left: 60px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 10px;
+
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+h4 {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+h5 {
+  font-size: 20px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+/* Hamburger*/
+
+#hamburgerIcon {
+  display: flex;
+  font-size: 3em;
+  cursor: pointer;
+}
+
+#hamburgerNav {
+  position: fixed;
+  height: 100%;
+  width: 0px;
+  /* Hat eine Breite von 0, wird also nicht angezeigt */
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.95);
+  text-align: center;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#hamburgerNav .closebtn {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  font-size: 60px;
+}
+
+#hamburgerNav a {
+  display: block;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  transition: 0.3s;
+}
+
+#hamburgerNav a:hover {
+  color: #f1f1f1;
+}
+
+#hamburgerNav a.active {
+  color: rgba(112, 177, 90, 0.5);
+}
+
+/* Alle Artikeln */
+
+#mainAffen article {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Einzelne Affen */
+
+#mainAffen section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px 50px 20px;
+  width: 30%;
+  min-width: 300px;
+  text-align: center;
+}
+
+#mainAffen .headline {
+  width: 100%;
+  color: rgb(16, 16, 16);
+  margin: 40px 0;
+}
+
+#mainAffen a:hover {
+  background-color: transparent;
+}
+
+.Affen-Bilder {
+  width: 100%;
+  box-shadow: 5px 10px 30px #888888;
+  cursor: pointer;
+}
+
+.Affen-Bilder:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+/* Beschreibung von den Affen */
+#overlay {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.95);
+  width: 90%;
+  padding: 100px 5%;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  z-index: 1000;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+#overlay img {
+  width: 60%;
+  height: auto;
+  margin-right: 20px;
+}
+
+#overlay h2 {
+  margin-bottom: 40px;
+  margin-top: -8px;
+  font-size: 2.5rem;
+}
+
+#overlay .closebtn {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  font-size: 60px;
+  color: green;
+  text-decoration: none;
+}
+
+.footer {
+  margin-top: 90px;
+  padding: 25px;
+  background-color: rgba(57, 150, 26, 0.5);
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media screen and (max-width:720px) {
+  /* Zusätzliche Regeln für kleinere Monitore  */
+
+  #overlay {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  #overlay img {
+    width: 100%;
+    height: auto;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  }
+  
