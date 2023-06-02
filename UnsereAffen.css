@@ -143,6 +143,17 @@ h5 {
   transition: 0.5s;
 }
 
+#Link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#Link:hover {
+  color: #b1afaf;
+}
+
 /* Beschreibung von den Affen */
 #overlay {
   display: none;
@@ -189,6 +200,23 @@ h5 {
   background-color: rgba(57, 150, 26, 0.5);
   flex-wrap: wrap;
   justify-content: space-around;
+  text-align: center;
+}
+
+.footer a + a {
+  margin-left: 90px;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffffff;
 }
 
 @media screen and (max-width:720px) {

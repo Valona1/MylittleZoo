@@ -1,128 +1,125 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MyLittleZoo</title>
-  <link href="./index.css" rel="stylesheet">
-  <meta name="viewport" content="Width=device-width, initial-scale=1">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
-    rel="stylesheet">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyLittleZoo</title>
+    <link href="./index.css" rel="stylesheet">
+    <meta name="viewport" content="Width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet">
+  </head>
 
+    <body>
 
-</head>
+            <header>
+              <a href="index.html">
+                <img class="header-image" src="images/Logo.png"/>
+              </a>
+              <h1>MyLittleZoo</h1>
 
-<body>
+              <div id="hamburgerIcon" onclick="openNav()">&#9776;</div>
+              <!-- Hamburger Navigation mit einem Close-Button (x), ist im CSS mit "width:0" ausgeblendet  -->
 
-  <header>
-    <a href="index.html">
-      <img class="header-image" src="images/Logo.png" />
-    </a>
-    <h1>MyLittleZoo</h1>
+              <nav id="hamburgerNav">
+                <a class="closebtn" onclick="closeNav()" href="#">&times;</a>
+                <!--  &times; stellt das X dar -->
+                <a class="active" href="index.html">Startseite</a>
+                <a href="UnsereAffen.html">Unsere Affen</a>
+                <a href="AboutUs.html">About Us</a>
+              </nav>
 
-    <div id="hamburgerIcon" onclick="openNav()">&#9776;</div>
-    <!-- Hamburger Navigation mit einem Close-Button (x), ist im CSS mit "width:0" ausgeblendet  -->
-
-    <nav id="hamburgerNav">
-      <a class="closebtn" onclick="closeNav()" href="#">&times;</a>
-      <!--  &times; stellt das X dar -->
-      <a class="active" href="index.html">Startseite</a>
-      <a href="UnsereAffen.html">Unsere Affen</a>
-      <a href="AboutUs.html">About Us</a>
-    </nav>
-
-  </header>
+            </header>
 
 
 
-  <div class="image-text-container">
+            <div class="image-text-container">
 
-    <div class="text-container">
-      <h2>Willkommen im Affenreich!</h2>
-      Hier kann man interaktive Ausstellungen besuchen, um mehr <br>
-      über die faszinierenden Verhaltensweisen der Affen zu erfahren.</p>
-    </div>
-  </div>
+              <div class="text-container">
+                <h2>Willkommen im Affenreich!</h2>
+                Hier kann man interaktive Ausstellungen besuchen, um mehr <br>
+                über die faszinierenden Verhaltensweisen der Affen zu erfahren.
+              </div>
+            </div>
 
-  <div class="bilder-container">
-    <div class="bild-container">
-        <img class="bild" src="images/Verschiedene Affen.png">
-      </a>
-      <div class="text-container1"></div>
-      <div class="text">
-        Wir haben über 20 verschiedene Affen Arten
-      </div>
-    </div>
+            <div class="bilder-container">
+              <div class="bild-container">
+                  <img class="bild" src="images/Verschiedene Affen.png">
+                <div class="text-container1"></div>
+                <div class="text">
+                  Wir haben über 20 verschiedene Affen Arten
+                </div>
+              </div>
 
-    <div class="bild-container">
-        <img class="bild" src="images/AffenFüttern.png">
-      </a>
-      <div class="text-container1"></div>
-      <div class="text">
-        Unsere Besucher können an unseren täglichen Fütterungen teilnehmen
-      </div>
-    </div>
+              <div class="bild-container">
+                  <img class="bild" src="images/AffenFüttern.png">
+                <div class="text-container1"></div>
+                <div class="text">
+                  Unsere Besucher können an unseren täglichen Fütterungen teilnehmen
+                </div>
+              </div>
 
-    <div class="bild-container">
-        <img class="bild" src="images/Besucher.png">
-      </a>
-      <div class="text-container1"></div>
-      <div class="text">
-        Die seltensten Affenarten der Welt finden sie bei uns
-      </div>
-    </div>
-  </div>
-  <p>
-  <div class="image-container2">
-    <div class="text-container2">
-      <h2>Unser Zoo befindet sich inmitten einer wunderschönen Waldlandschaft</h2>
-      <p>
-      <p>
-    </div>
-  </div>
-  </p>
+              <div class="bild-container">
+                  <img class="bild" src="images/Besucher.png">
+                <div class="text-container1"></div>
+                <div class="text">
+                  Die seltensten Affenarten der Welt finden sie bei uns
+                </div>
+              </div>
+            </div>
+            <p>
+            <div class="image-container2">
+              <div class="text-container2">
+                <h2>Unser Zoo befindet sich inmitten einer wunderschönen Waldlandschaft</h2>
+                <p>
+                <p>
+              </div>
+            </div>
 
 
-  <h4>Besuchen Sie uns und erleben Sie die Magie der Affenwelt! </h4> <br>
+        <h4>Besuchen Sie uns und erleben Sie die Magie der Affenwelt! </h4> <br>
 
-  <p>
-  <div class="info-container">
-    <div class="info-item">
-      <h5>Öffnungszeiten</h5>
-      <p>Montag bis Freitag: 10:00 Uhr - 18:00 Uhr<br>
-        Samstag bis Sonntag: 09:00 Uhr - 17:00 Uhr</p>
-    </div>
-    <div class="info-item">
-      <h5>Feiertage</h5>
-      <p>09:00 Uhr - 19:00 Uhr</p>
-    </div>
-    <div class="info-item">
-      <h5>Preise</h5>
-      <p>Erwachsene: CHF 20<br>
-        Jugendliche (9-17 Jahre): CHF 15 <br>
-        Kinder (unter 9): Gratis</p>
-    </div>
-  </div>
-
-
-  <footer class="footer">
-    © Copyrights
-  </footer>
+        <div class="info-container">
+          <div class="info-item">
+            <h5>Öffnungszeiten</h5>
+            <p>Montag bis Freitag: 10:00 Uhr - 18:00 Uhr<br>
+              Samstag bis Sonntag: 09:00 Uhr - 17:00 Uhr</p>
+          </div>
+          <div class="info-item">
+            <h5>Feiertage</h5>
+            <p>09:00 Uhr - 19:00 Uhr</p>
+          </div>
+          <div class="info-item">
+            <h5>Preise</h5>
+            <p>Erwachsene: CHF 20<br>
+              Jugendliche (9-17 Jahre): CHF 15 <br>
+              Kinder (unter 9): Gratis</p>
+          </div>
+        </div>
 
 
-  <script>
-    function openNav() {
-      document.getElementById("hamburgerNav").style.width = "100%";
-    }
-    function closeNav() {
-      document.getElementById("hamburgerNav").style.width = "0%";
-    }
-  </script>
+        <footer class="footer">
+          <strong> Copyrights </strong>  <br> <br>
+          <a href="https://www.pexels.com/de-de/">Pexel</a> 
+          <a href="https://de.freepik.com/">Freepik</a>
+          <a href="https://icon-icons.com/">Icon</a>
+          <a class="datenschutz" href="Datenschutz.pdf" download="datenschutz.pdf">Datenschutz</a>
+        </footer>
 
-</body>
+
+        <script>
+          function openNav() {
+            document.getElementById("hamburgerNav").style.width = "100%";
+          }
+          function closeNav() {
+            document.getElementById("hamburgerNav").style.width = "0%";
+          }
+        </script>
+
+    </body>
 
 </html>
